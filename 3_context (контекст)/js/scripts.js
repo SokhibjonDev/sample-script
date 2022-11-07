@@ -41,6 +41,12 @@ window.onload = function () {
         text.style.background = 'greenyellow'
         text.style.color = 'black'
     }
+    function dblclick() {
+        text.style.background = 'blue'
+        text.innerHTML = 'Skywalker'
+    }
+    text.addEventListener('dblclick', dblclick)
+
 }
 
 
@@ -48,3 +54,4 @@ window.onload = function () {
 // onmouseover = Stylesheet in Javascript tagName => hover // succesful
 // onclick = Javascsript = code || tag  => functionClick() // succesful
 // onmouseover = Style Javascript tagName => hover is over // succesful
+// addEventListener  => "dblclick" it's doubleClick function succcesful
