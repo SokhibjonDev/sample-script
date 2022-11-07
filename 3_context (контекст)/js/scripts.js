@@ -1,25 +1,50 @@
+// window.onload = function () {
+//     var web = document.querySelector('.text');
+
+
+//     web.onmouseover = function () {
+//         web.innerHTML = 'Meni hover qilishdi'
+//         web.style.background = 'red'
+//         web.style.margin = '100px auto'
+//     }
+
+//     web.onmouseleave = function () {
+//         web.innerHTML = 'Hoverni qaytar'
+//         web.style.background = 'green'
+//     }
+
+
+//     web.onclick = function () {
+//         web.innerHTML = 'Meni bosishdi'
+//         web.style.background = 'yellow'
+//         web.style.transition = '.5s'
+//         web.style.transform = 'rotate(720deg)'
+//     }
+
+
+// }
 window.onload = function () {
-    var web = document.querySelector('.text');
+    var text = document.querySelector('.text');
 
-
-    web.onmouseover = function () {
-        web.innerHTML = 'Meni hover qilishdi'
-        web.style.background = 'red'
-        web.style.margin = '100px auto'
+    text.onmouseover = () => {
+        text.style.background = 'orange'
+        text.style.color = 'black'
+        text.innerHTML = "Hello there"
     }
-
-    web.onmouseleave = function () {
-        web.innerHTML = 'Hoverni qaytar'
-        web.style.background = 'green'
+    text.onclick = () => {
+        text.style.background = 'red'
+        text.style.color = 'white'
+        text.innerHTML = "I`m Darth Vader"
     }
-
-
-    web.onclick = function () {
-        web.innerHTML = 'Meni bosishdi'
-        web.style.background = 'yellow'
-        web.style.transition = '.5s'
-        web.style.transform = 'rotate(720deg)'
+    text.onmouseleave = () => {
+        text.innerHTML = "Bye there"
+        text.style.background = 'greenyellow'
+        text.style.color = 'black'
     }
-
-
 }
+
+
+
+// onmouseover = Stylesheet in Javascript tagName => hover // succesful
+// onclick = Javascsript = code || tag  => functionClick() // succesful
+// onmouseover = Style Javascript tagName => hover is over // succesful
