@@ -49,16 +49,26 @@
 // }
 
 
+// window.onload = () => {
+//     var text = document.querySelector('.text');
+
+//     text.addEventListener('mouseover', () => {
+//         text.style.marginTop = '100px'
+//     })
+
+//     text.onclick = function () {
+//         text.style.fontSize = '50px'
+//     }
+// }
+
 window.onload = () => {
     var text = document.querySelector('.text');
 
-    text.addEventListener('mouseover', () => {
-        text.style.marginTop = '100px'
+    text.addEventListener('click', function () {
+        this.innerHTML = 'I was clicked'
+        this.style.background = 'orange'
     })
 
-    text.onclick = function () {
-        text.style.fontSize = '50px'
-    }
 }
 
 // onmouseover = Stylesheet in Javascript tagName => hover // succesful
