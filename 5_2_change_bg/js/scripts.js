@@ -25,12 +25,27 @@
 
 // }
 
+// window.addEventListener('load', function (e) {
+//     let btn = document.querySelectorAll('.btn');
+//     let nav = document.querySelector('.navbar');
+
+//     btn.forEach(function (val, index) {
+//         console.log(val, index);
+//         btn[index].addEventListener('click', setAttribute)
+
+//         function setAttribute() {
+//             let bgColor = this.getAttribute('data-color')
+//             nav.style.background = bgColor
+//         }
+//     })
+// });
+
 window.addEventListener('load', function (e) {
     let btn = document.querySelectorAll('.btn');
     let nav = document.querySelector('.navbar');
 
-    btn.forEach(function (val, index) {
-        console.log(val, index);
+    btn.forEach(function (val, index) { // if , in function stayed one empty, else function not workning
+        console.log(val);
         btn[index].addEventListener('click', setAttribute)
 
         function setAttribute() {
